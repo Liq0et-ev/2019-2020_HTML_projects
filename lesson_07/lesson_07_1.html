@@ -1,0 +1,27 @@
+﻿<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+<TITLE></TITLE>
+<STYLE type="text/css">
+IMG {border:3px solid black;}
+</STYLE>
+<SCRIPT language="JavaScript">
+ var i=0; 
+function f0() {	
+	if (i==0) {
+		document.pic0.src="../image/images001.jpg";
+		i++;
+		} else {
+		document.pic0.src="../image/images002.jpg";
+		i--;
+		}	
+               }
+</Script>   
+</Head>
+
+<center>
+<body bgcolor="lightgoldenrodyellow">
+<IMG height="150px" width="200px" name="pic0" src="image/images003.jpg" style="position:relative;top:100px"  OnMouseOver="document.pic0.height='300'" OnMouseOut="document.pic0.height='150'" OnClick="f0();"">
+</body>
+</center>
+ </HTML>

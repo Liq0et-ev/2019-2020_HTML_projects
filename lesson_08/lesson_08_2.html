@@ -1,0 +1,39 @@
+﻿<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+<TITLE>Задание 8</TITLE>
+<STYLE type="text/css">
+IMG {width:180px; height:300px; border:1px solid black;}
+</STYLE>
+ <SCRIPT language="JavaScript"> 
+  var k ="../image/";
+  foto = new Array (7); 
+  foto (var i=0; i<8; i++)
+foto[i]=new Image()
+foto[0].src="images000.jpg";
+foto[1].src="images001.jpg";
+foto[2].src="images002.jpg";
+foto[3].src="images003.jpg";
+foto[4].src="images004.jpg";
+foto[5].src="images005.jpg";
+foto[6].src="images006.jpg";
+foto[7].src="images007.jpg";
+
+
+function slideShow() {
+f=1;
+k++; if(k>foto.length) k=0;
+document.images[3].src = foto[k].src;
+setTimeout("slideShow()",1000);
+}
+
+ </SCRIPT> 
+</HEAD>
+
+
+<BODY onLoad="SlideShow()" bgcolor="lightgreen">
+ <SCRIPT language="JavaScript"> 
+document.write('<IMG src="'+foto[0].src+'">' style="position:relative;top:100px");
+ </SCRIPT> 
+</BODY>
+</HTML>

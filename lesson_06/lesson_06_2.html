@@ -1,0 +1,39 @@
+﻿<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+<TITLE></TITLE>
+<STYLE type="text/css">
+IMG {border:1px solid black;width:200px;height:150px;}
+</Style>
+<SCRIPT language="JavaScript">
+         function f2(z){ 
+		 document.pic.src='../image/'+z; 
+	   }
+</SCRIPT>
+
+</HEAD>
+<BODY bgcolor="blue">
+<center>
+<IMG name="pic" SRC="../image/images000.jpg">
+<br>
+<FORM name="myForm">
+
+	<SELECT name="menu" onChange="f2(this.value);"> 
+	<OPTION value="images000.jpg" selected>Картинка 1</OPTION>
+	<OPTION value="images002.jpg">Картинка 2
+	</OPTION>
+	<OPTION value="images000.jpg">Картинка 3
+	</OPTION>
+	<OPTION value="images003.jpg">Картинка 4
+	</OPTION>
+	<OPTION value="images003.jpg">Картинка 5
+	</OPTION>
+	<OPTION value="images003.jpg">Картинка 6
+	</OPTION>
+	<OPTION value="images003.jpg">Картинка 7
+	</OPTION>
+	</SELECT> 
+	</form>
+</center>
+</BODY>
+</HTML>

@@ -1,0 +1,74 @@
+﻿<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+<TITLE></TITLE>
+<STYLE type="text/css">
+IMG {width:300px; height:200px; border:1px solid black;}
+</STYLE>
+<SCRIPT language="JavaScript"> 
+
+
+
+	    	
+
+	   	  
+
+  var j1=0; 
+   var j3=0; 
+   function f4(){ 
+	   if (j1==8) j1=0;
+	   else 
+	   j1++;
+			switch (j1) {
+			case 0:
+			 document.pic4.src="../image/images001.jpg";
+			 document.MyForm4.text.value="Картинка 1";
+			 break;
+			case 1:
+			 document.pic4.src="../image/images002.jpg";
+			  document.MyForm4.text.value="Картинка 2";
+			 break;
+			case 2:
+			 document.pic4.src="../image/images003.jpg";
+			  document.MyForm4.text.value="Картинка 3";
+			 break;
+			case 3:
+			document.pic4.src="../image/images004.jpg";
+			 document.MyForm4.text.value="Картинка 4";
+			break;
+			case 4:
+			document.pic4.src="../image/images005.jpg";
+			document.MyForm4.text.value="Картинка 5";
+			case 5:
+			 document.pic4.src="../image/images006.jpg";
+			 document.MyForm4.text.value="Картинка 1";
+			 break;
+			case 6:
+			 document.pic4.src="../image/images007.jpg";
+			  document.MyForm4.text.value="Картинка 2";
+			 break;
+			case 7:
+			 document.pic4.src="../image/images008.jpg";
+			  document.MyForm4.text.value="Картинка 3";
+			 break;
+			case 8:
+			document.pic4.src="../image/images009.jpg";
+			 document.MyForm4.text.value="Картинка 4";
+			break;		 			 
+						}		 	  	  
+				}		   
+
+</SCRIPT>	    
+</HEAD>
+<BODY bgcolor="red">
+ <center>
+ <INPUT type="button" value="<" onclick="f4();">
+<IMG NAME="pic4" SRC="../image/images000.jpg" style="position:relative;top:100px">
+ <INPUT type="button" value=">" onclick="f4();"><br>
+ 
+<INPUT name="text" type="text" value="Картинка 1"  readonly>
+
+
+</center>
+</BODY>
+</HTML>

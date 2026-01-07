@@ -1,0 +1,69 @@
+﻿<HTML>
+<HEAD>
+<style>
+IMG {width:200px;border:1px solid black;}
+</style>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+<TITLE></TITLE>
+</HEAD>
+<BODY>
+<script language="JavaScript">
+//-----------------
+document.bgColor ="blue"; 
+document.fgColor ="green"; 
+document.write("<BR>")
+//-----------------
+document.bgColor= prompt ("Введите желаемый цвет страницы","gainsboro");
+document.fgColor= prompt ("Введите желаемый цвет текста","darked");
+//-----------------
+document.write("<fieldset>");
+document.write("<legend>Это <b>HTML</B></legend> ");
+document.write("<IMG name='picture0' src='../image/images001.jpg'> &nbsp");
+document.write("<IMG name='picture1' src='../image/images002.jpg'><br>");
+document.write("<INPUT name='text1' type='text'value='picture1'> &nbsp &nbsp &nbsp &nbsp  ");
+document.write("<INPUT name='text2' type='text' value='picture2'>");
+document.write("</fieldset>");
+//---------------
+document.write("<fieldset>");
+document.write("<legend>Это <b>JavaScript</B></legend> ");
+document.write("<IMG name='picture2' src='../image/images00"+prompt ('Введите номер картинки picture3','3')+".jpg'> &nbsp");
+document.write("<IMG name='picture3' src='../image/images00"+prompt ('Введите номер картинки picture4','4')+".jpg'>");
+document.write("<FORM name='MyForm'>");
+document.write("<INPUT name='text1' type='text' value='picture3'>");
+document.write("<INPUT name='text2' type='text' value='picture4'>");
+document.write("</FORM>");
+document.write("</fieldset>");
+//---------------
+document.write("<P><h1>Перечень объектов на странице</h1></P>");
+//---------------
+document.write("<BR><h2><p>Количество картинок: "+document.images.length+"</P></h2><BR>");
+document.write("<p>Имена картинок:</P><BR>");
+document.write(document.images[0].name);
+document.write("<BR>");
+document.write(document.images[1].name);
+document.write("<BR>");
+document.write(document.images[2].name);
+document.write("<BR>");
+document.write(document.images[3].name);
+document.write("<BR>");
+//---------------
+document.write("<BR><p><h2>Количество форм: "+document.forms.length+"</h2></p><BR>");
+document.write("Имя формы:"+document.forms[0].name+"<br>");
+document.write("Количество элементов в форме:6<br>");
+document.write("Элементы формы:<br>");
+document.write("<br>");
+document.write("<br>");
+document.write("text1");
+document.write("<br>");
+document.write("text2<br>");
+document.write("<br>");
+document.write("text3");
+document.write("<br>");
+document.write("text4<br>");
+document.write("<br>");
+//---------------
+document.write("<BR>Количество  ссылок "+document.links.length);
+document.write(" <BR>Имя ссылки: "+document.links[0].name+"<BR>");
+</script>
+</BODY>
+</HTML>

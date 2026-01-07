@@ -1,0 +1,54 @@
+﻿<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+<TITLE></TITLE>
+<STYLE type="text/css">
+IMG {width:200px; height:100px; border:3px solid black;}
+</STYLE>
+ <SCRIPT language="JavaScript"> 
+ var k ="../image/";
+ foto = new Array; 
+ for (var i=0; i<=7; i++) {
+ foto[i] = new Image();
+ foto[i].src=k+"images00"+i+".jpg";		}  
+ var n=0;
+ function f2(){
+ if (n==0) {
+ j=4;
+ n=1;
+ document.Myform1.button.value="1";
+ }  else  {
+ j=0;
+ n=0;
+ document.Myform1.button.value="0";
+ };
+    for (var i=0; i<4 ;i++)  {
+	document.images[i].src = foto[j].src;
+	j++;
+							}
+			} 
+			
+ </SCRIPT> 
+</HEAD>
+
+<BODY bgcolor="green">
+<table border=1  align="center" style="position:relative;top:100px">
+ <SCRIPT language="JavaScript">
+      document.write('<Tr>');
+	  document.write('<TD align="center"><IMG src="'+foto[0].src+'"></TD>'); 
+	  document.write('<TD align="center"><IMG src="'+foto[1].src+'"></TD>'); 
+	  document.write('</Tr>');
+	  document.write('<Tr>');
+	  document.write('<TD align="center"><IMG src="'+foto[2].src+'"></TD>');
+	  document.write('<TD align="center"><IMG src="'+foto[3].src+'"></TD>'); 
+      document.write('</Tr>');
+	 
+ </SCRIPT> 
+ </table>
+ 
+ <form name="Myform1">
+ <INPUT type="button" name="button" value="1" onClick="f2();"  style="position:relative;left:915px;top:105px;" >
+ </form>
+</BODY>
+</HTML>
+
